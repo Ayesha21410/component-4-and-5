@@ -19,3 +19,7 @@ class QuizStarter:
         self.title_image = ImageTk.PhotoImage(self.title_image)
         self.heading_label=Label(parent, image=self.title_image, border=0)#add label for title image 
         self.heading_label.place(x=170, y=110)
+        #label for username
+        self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","15","bold"),fg="Black",bg=background_color)
+        self.user_label.place(x=105, y=260)
+        

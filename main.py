@@ -10,4 +10,5 @@ asked=[] #List used to append the questions.
 # inserting first class which is QuizStarter.
 class QuizStarter:
   def __init__(self, parent):#constructor, The __init__() function is called automatically every time the class is being used to create a new object.
-  
+        background_color1="#f0dff2"
+        background_color="#a3e4fa"

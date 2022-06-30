@@ -22,4 +22,6 @@ class QuizStarter:
         #label for username
         self.user_label=Label(parent, text="Please enter your username below: ", font=("Tw Cen MT","15","bold"),fg="Black",bg=background_color)
         self.user_label.place(x=105, y=260)
-        
+        #entry box
+        self.entry_box=Entry(parent)
+        self.entry_box.place(x=210, y=320) #placement 

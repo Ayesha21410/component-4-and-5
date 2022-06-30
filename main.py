@@ -10,5 +10,10 @@ asked=[] #List used to append the questions.
 # inserting first class which is QuizStarter.
 class QuizStarter:
   def __init__(self, parent):#constructor, The __init__() function is called automatically every time the class is being used to create a new object.
-        background_color1="#f0dff2"
-        background_color="#a3e4fa"
+        background_color1="#f0dff2" #bg color1
+        background_color="#a3e4fa"  #bg color2
+        
+        #inserting title image 
+        self.title_image = Image.open("Title.png") #need to use Image if need to resize 
+        self.title_image = self.title_image.resize((295, 135), Image.ANTIALIAS)
+        self.title_image = ImageTk.PhotoImage(self.title_image)

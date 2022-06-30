@@ -17,3 +17,5 @@ class QuizStarter:
         self.title_image = Image.open("Title.png") #need to use Image if need to resize 
         self.title_image = self.title_image.resize((295, 135), Image.ANTIALIAS)
         self.title_image = ImageTk.PhotoImage(self.title_image)
+        self.heading_label=Label(parent, image=self.title_image, border=0)#add label for title image 
+        self.heading_label.place(x=170, y=110)

@@ -49,3 +49,8 @@ class QuizStarter:
                 'name can not consist of symbols')
         else:
             names_list.append(name)  # add name to names list declared at the beginning
+            self.entry_box.destroy()
+            self.user_label.destroy()
+            self.continue_button.destroy()
+            self.heading_label.destroy()
+            Instructionwindow(root)
